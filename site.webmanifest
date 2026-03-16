@@ -1,0 +1,17 @@
+{
+  "name": "Nallagorla Siva Ganesh Portfolio",
+  "short_name": "NSG Work",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#050009",
+  "theme_color": "#050009",
+  "description": "Portfolio site for Nallagorla Siva Ganesh · Software & Mobile Developer",
+  "icons": [
+    {
+      "src": "assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

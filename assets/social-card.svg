@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Nallagorla Siva Ganesh Portfolio">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050009" />
+      <stop offset="100%" stop-color="#231046" />
+    </linearGradient>
+    <linearGradient id="stroke" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f26b50" />
+      <stop offset="100%" stop-color="#5de0e6" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" rx="40" />
+  <g fill="none" stroke="url(#stroke)" stroke-width="6" opacity="0.6">
+    <rect x="60" y="60" width="1080" height="510" rx="36" />
+    <rect x="110" y="110" width="980" height="410" rx="32" />
+  </g>
+  <text x="140" y="250" font-family="'Space Grotesk', 'Fraunces', sans-serif" font-size="56" fill="#f8f4f0" font-weight="600">
+    Nallagorla Siva Ganesh
+  </text>
+  <text x="140" y="330" font-family="'Space Grotesk', sans-serif" font-size="32" fill="#f8f4f0" opacity="0.8">
+    Software & Mobile Developer · React · React Native · Java · MySQL
+  </text>
+  <text x="140" y="410" font-family="'Space Grotesk', sans-serif" font-size="28" fill="#f26b50">
+    Building reliable web and mobile applications with clean, modern code.
+  </text>
+</svg>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio site for Nallagorla Siva Ganesh · Software & Mobile Developer"
+    />
+    <title>Nallagorla Siva Ganesh · Portfolio</title>
+    <meta name="theme-color" content="#04030a" />
+    <link rel="canonical" href="https://nsg-lab.github.io/portfolio" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Nallagorla Siva Ganesh · Portfolio" />
+    <meta
+      property="og:description"
+      content="Software & Mobile Developer crafting reliable web & mobile applications."
+    />
+    <meta property="og:url" content="https://nsg-lab.github.io/portfolio" />
+    <meta property="og:image" content="assets/social-card.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nallagorla Siva Ganesh · Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Software & Mobile Developer crafting reliable web & mobile applications."
+    />
+    <meta name="twitter:image" content="assets/social-card.svg" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="mask-icon" href="assets/favicon.svg" color="#050009" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:ital,wght@0,500;0,600;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#about">Skip to content</a>
+    <nav class="hero__nav">
+      <a class="hero__logo" href="#top" aria-label="Nallagorla Siva Ganesh home">
+        <img src="assets/high-resolution-color-logo.png" alt="Nallagorla Siva Ganesh personal logo" />
+      </a>
+      <button
+        class="hero__menu"
+        aria-label="Toggle navigation"
+        aria-controls="primary-navigation"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+      </button>
+      <div class="hero__links" id="primary-navigation" aria-hidden="true">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Education</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="theme-toggle" aria-label="Toggle theme">
+        <span class="theme-toggle__icon">☀</span>
+      </button>
+    </nav>
+
+    <header class="hero" id="top">
+      <div class="hero__shell">
+        <div class="hero__intro reveal">
+          <p class="hero__eyebrow">CS & IT Student · Tenali</p>
+          <h1>
+            Engineering dependable web & mobile launches for early-stage ideas and community impact.
+          </h1>
+          <p>
+            I build calm, production-ready experiences across React, React Native, Java, and MySQL. Each release
+            balances craft with measurable outcomes—helping entrepreneurs sell online, guiding first-time cooks, and
+            automating delivery rituals.
+          </p>
+          <div class="hero__cta">
+            <a class="btn" href="assets/Nallagorla_Siva_Ganesh_Resume.pdf" download>Download Resume</a>
+            <a class="btn btn--ghost" href="#projects">See Recent Work</a>
+          </div>
+          <div class="hero__channels" aria-label="Preferred contact channels">
+            <a href="mailto:sivaganeshnallagorla@gmail.com">Email</a>
+            <a href="tel:+918185818665">Call</a>
+            <a href="https://www.linkedin.com/in/nallagorla-siva-ganesh" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/NSG-LAB" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero__stats" aria-label="Key impact metrics">
+        <article class="stat-card">
+          <p class="stat-card__value"><span class="metric__value" data-count="3">0</span>+</p>
+          <p class="stat-card__label">Production-ready launches</p>
+        </article>
+        <article class="stat-card">
+          <p class="stat-card__value"><span class="metric__value" data-count="12">0</span>+</p>
+          <p class="stat-card__label">Repositories maintained</p>
+        </article>
+        <article class="stat-card">
+          <p class="stat-card__value"><span class="metric__value" data-count="6">0</span>+</p>
+          <p class="stat-card__label">Core technologies shipped</p>
+        </article>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="section section--about">
+        <div class="section__intro">
+          <p>Professional Summary</p>
+          <h2>Pairing coursework with real pilots to ship dependable experiences.</h2>
+          <p class="section__lede">
+            KL University labs in the morning, field pilots by evening. I translate research into resilient shipping
+            rituals that help communities adopt technology with confidence.
+          </p>
+        </div>
+        <div class="about-grid">
+          <article class="about-grid__story reveal">
+            <p class="eyebrow">Field notes from Tenali</p>
+            <h3>Hands-on builder who documents every move.</h3>
+            <p>
+              From commerce flows for rural entrepreneurs to CookMate's guided recipes, I frame every build with
+              success metrics, rollout checklists, and lightweight observability.
+            </p>
+            <p>
+              The result: calmer launches that respect constraints—spotty bandwidth, low-end devices, and teams that
+              need clear handoffs.
+            </p>
+            <ul class="about-story__list">
+              <li>
+                <span class="index">01</span>
+                <div>
+                  <strong>Design with constraints</strong>
+                  <p>Architect storefronts and onboarding that hold up on 3G connections.</p>
+                </div>
+              </li>
+              <li>
+                <span class="index">02</span>
+                <div>
+                  <strong>Ship API-first</strong>
+                  <p>Pair schema reviews with automated tests before exposing new surfaces.</p>
+                </div>
+              </li>
+              <li>
+                <span class="index">03</span>
+                <div>
+                  <strong>Coach teams</strong>
+                  <p>Document delivery rituals so collaborators can replay the win.</p>
+                </div>
+              </li>
+            </ul>
+          </article>
+          <aside class="about-grid__panel reveal">
+            <div class="about-panel__metrics">
+              <div class="about-metric">
+                <span>12+</span>
+                <p>Repositories stewarded</p>
+              </div>
+              <div class="about-metric">
+                <span>6</span>
+                <p>Core technologies iterated weekly</p>
+              </div>
+              <div class="about-metric">
+                <span>3</span>
+                <p>Active pilots this semester</p>
+              </div>
+            </div>
+            <div class="about-panel__focus">
+              <p class="label">Active labs</p>
+              <div class="tag-rail" aria-label="Focus areas">
+                <span>Rural commerce</span>
+                <span>CookMate</span>
+                <span>Delivery automation</span>
+                <span>MySQL tuning</span>
+              </div>
+            </div>
+            <div class="about-panel__values">
+              <p class="label">Operating values</p>
+              <ul class="about-values">
+                <li>Evidence before ego</li>
+                <li>Document the handoff</li>
+                <li>Ship, learn, and repeat</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+        <div class="about-toolkit" aria-label="Toolkit">
+          <article class="about-toolkit__group">
+            <header>
+              <p class="label">Frontend systems</p>
+              <h4>Interfaces that stay fast under pressure.</h4>
+            </header>
+            <ul class="tag-list">
+              <li>React</li>
+              <li>Next.js (learning)</li>
+              <li>TypeScript</li>
+              <li>Styled Systems</li>
+            </ul>
+          </article>
+          <article class="about-toolkit__group">
+            <header>
+              <p class="label">Mobile & native</p>
+              <h4>React Native builds with Expo discipline.</h4>
+            </header>
+            <ul class="tag-list">
+              <li>React Native</li>
+              <li>Expo</li>
+              <li>Java</li>
+              <li>Android Studio</li>
+            </ul>
+          </article>
+          <article class="about-toolkit__group">
+            <header>
+              <p class="label">APIs & data</p>
+              <h4>Schema-first services with observability.</h4>
+            </header>
+            <ul class="tag-list">
+              <li>Node.js</li>
+              <li>Java</li>
+              <li>MySQL</li>
+              <li>Postman</li>
+            </ul>
+          </article>
+          <article class="about-toolkit__group">
+            <header>
+              <p class="label">Collaboration</p>
+              <h4>Workflows that keep teams in sync.</h4>
+            </header>
+            <ul class="tag-list">
+              <li>Git & GitHub</li>
+              <li>Figma</li>
+              <li>VS Code</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section section--projects">
+        <div class="section__intro">
+          <p>Projects</p>
+          <h2>Focused builds for the web, platform, and mobile.</h2>
+          <p class="section__lede">Filter the work to see how I tailor delivery for each surface.</p>
+          <div class="section__filters" role="group" aria-label="Project filters">
+            <button class="filter-btn is-active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="platform">Platform</button>
+            <button class="filter-btn" data-filter="mobile">Mobile</button>
+          </div>
+        </div>
+        <div class="projects__grid" id="projectsGrid">
+          <!-- Static fallback cards ensure content is present without JavaScript -->
+          <article class="project-card reveal" data-type="platform">
+            <span class="project-card__tag">2025 · Platform</span>
+            <h3>Rural Entrepreneurship Platform</h3>
+            <p>Responsive web platform connecting rural entrepreneurs to digital marketplaces to grow their income.</p>
+            <div class="project-card__meta">
+              <span>React</span>
+              <span>Responsive Web</span>
+              <span>REST APIs</span>
+            </div>
+            <div class="project-card__links">
+              <a class="project-card__link" href="https://framerenpevorment.netlify.app/" target="_blank" rel="noreferrer">Live Demo →</a>
+              <a class="project-card__link" href="https://github.com/sivaganeshnallagorla-spec/Rural-Entrepreneurship-Platform" target="_blank" rel="noreferrer">GitHub →</a>
+            </div>
+          </article>
+          <article class="project-card reveal" data-type="web">
+            <span class="project-card__tag">2026 · Web</span>
+            <h3>Custom Portfolio Website</h3>
+            <p>Clean, fast portfolio used to showcase editing + tech work while highlighting storytelling chops.</p>
+            <div class="project-card__meta">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-card__links">
+              <a class="project-card__link" href="https://prishwanthsai.netlify.app/" target="_blank" rel="noreferrer">Live Demo →</a>
+              <a class="project-card__link" href="https://github.com/NSG-LAB" target="_blank" rel="noreferrer">GitHub →</a>
+            </div>
+          </article>
+          <article class="project-card reveal" data-type="mobile">
+            <span class="project-card__tag">In Progress · Mobile</span>
+            <h3>CookMate</h3>
+            <p>React Native companion guiding first-time cooks with stepwise recipes, timers, and grocery context.</p>
+            <div class="project-card__meta">
+              <span>React Native</span>
+              <span>Expo</span>
+              <span>Firebase</span>
+            </div>
+            <div class="project-card__links">
+              <a class="project-card__link" href="https://github.com/NSG-LAB" target="_blank" rel="noreferrer">Roadmap →</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section section--experience">
+        <div class="section__intro">
+          <p>Education</p>
+          <h2>Learning pathways that inform my delivery style.</h2>
+        </div>
+        <ol class="timeline" id="timeline">
+          <!-- Static timeline fallback to support no-JS environments -->
+          <li class="reveal">
+            <p class="timeline__role">B.Tech · Computer Science &amp; Information Technology</p>
+            <p class="timeline__place">KL University</p>
+            <p>Currently Pursuing</p>
+            <p>Focusing on software development, web technologies, and mobile app engineering.</p>
+          </li>
+          <li class="reveal">
+            <p class="timeline__role">Intermediate (MPC)</p>
+            <p class="timeline__place">Narayana Junior College, Tenali, Guntur</p>
+            <p>Completed</p>
+            <p>Strengthened mathematics and physics fundamentals for engineering studies.</p>
+          </li>
+          <li class="reveal">
+            <p class="timeline__role">Secondary School (10th)</p>
+            <p class="timeline__place">Narayana EM High School, Tenali, Guntur</p>
+            <p>Completed</p>
+            <p>Graduated with a focus on science and logical reasoning foundations.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="highlights" class="section section--insights">
+        <div class="section__intro">
+          <p>GitHub Highlights</p>
+          <h2>Practicing in public to move faster.</h2>
+        </div>
+        <div class="insights-grid">
+          <article class="insight-card">
+            <h3>Repository stewardship</h3>
+            <p>
+              Maintains and manages repositories with issues, releases, and code reviews at
+              <a href="https://github.com/NSG-LAB" target="_blank" rel="noreferrer">github.com/NSG-LAB</a>.
+            </p>
+          </article>
+          <article class="insight-card">
+            <h3>Build-in-public cadence</h3>
+            <p>Publishes demos and experiments, using feedback loops to sharpen craft.</p>
+          </article>
+          <article class="insight-card">
+            <h3>Version control rigor</h3>
+            <p>Git-based workflows keep every release traceable and reversible.</p>
+          </article>
+          <article class="insight-card">
+            <h3>Continuous improvement</h3>
+            <p>Regularly iterates on real-world projects to refine testing, DX, and UI polish.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section section--contact">
+        <div class="section__intro">
+          <p>Contact</p>
+          <h2>Let’s build something genuinely useful.</h2>
+          <p class="section__lede">
+            Open to internships, freelance builds, hackathons, and collaborations touching education or mobile-first
+            experiences.
+          </p>
+        </div>
+        <div class="contact-grid">
+          <article class="contact-card contact-card--cta reveal">
+            <p class="contact__eyebrow">Availability</p>
+            <h3>Rapid replies, thoughtful partnerships.</h3>
+            <ul class="contact__slots">
+              <li>
+                <span>Response time</span>
+                <strong>&lt; 24 hrs (IST)</strong>
+              </li>
+              <li>
+                <span>Working hours</span>
+                <strong>7 AM – 11 PM IST</strong>
+              </li>
+              <li>
+                <span>Collab modes</span>
+                <strong>Remote · Hybrid · On-site (Tenali)</strong>
+              </li>
+            </ul>
+            <div class="contact__cta">
+              <a class="btn" href="mailto:sivaganeshnallagorla@gmail.com">Email Siva</a>
+              <a class="btn btn--ghost" href="tel:+918185818665">Call / WhatsApp</a>
+            </div>
+          </article>
+          <article class="contact-card reveal">
+            <h3>Direct lines</h3>
+            <ul class="contact__direct">
+              <li>
+                <span>Phone</span>
+                <a href="tel:+918185818665">+91 81858 18665</a>
+              </li>
+              <li>
+                <span>Email</span>
+                <a href="mailto:sivaganeshnallagorla@gmail.com">sivaganeshnallagorla@gmail.com</a>
+              </li>
+              <li>
+                <span>LinkedIn</span>
+                <a href="https://www.linkedin.com/in/nallagorla-siva-ganesh" target="_blank" rel="noreferrer">
+                  linkedin.com/in/nallagorla-siva-ganesh
+                </a>
+              </li>
+              <li>
+                <span>GitHub</span>
+                <a href="https://github.com/NSG-LAB" target="_blank" rel="noreferrer">github.com/NSG-LAB</a>
+              </li>
+            </ul>
+            <div class="contact__status">
+              <span>Time zone: IST (UTC+5:30)</span>
+              <span>Prefers async updates with weekly demos</span>
+            </div>
+          </article>
+          <article class="contact-card contact-card--note reveal">
+            <h3>Social signals</h3>
+            <p>Follow for code drops, UI experiments, and build-in-public learnings.</p>
+            <ul class="contact__social">
+              <li>
+                <a href="https://www.linkedin.com/in/nallagorla-siva-ganesh" target="_blank" rel="noreferrer">
+                  LinkedIn →
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/NSG-LAB" target="_blank" rel="noreferrer">GitHub →</a>
+              </li>
+            </ul>
+            <p class="contact__note">Publishing progress updates twice a week.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Nallagorla Siva Ganesh · Crafted with curiosity.</p>
+      <div class="footer__links">
+        <a href="https://www.linkedin.com/in/nallagorla-siva-ganesh" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/NSG-LAB" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </footer>
+  </body>
+</html>
