@@ -1,70 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+          <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Nallagorla Siva Ganesh",
+              "url": "https://nsg-lab.github.io/portfolio/",
+              "image": "https://nsg-lab.github.io/portfolio/assets/high-resolution-color-logo.png",
+              "sameAs": [
+                "https://github.com/NSG-LAB",
+                "https://www.linkedin.com/in/nallagorla-siva-ganesh"
+              ],
+              "jobTitle": "Software & Mobile Developer",
+              "description": "Portfolio site for Nallagorla Siva Ganesh · Software & Mobile Developer"
+            }
+          </script>
+      <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />
+      <link rel="robots" type="text/plain" href="/robots.txt" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Portfolio site for Nallagorla Siva Ganesh · Software & Mobile Developer"
-    />
+    <meta name="description" content="Portfolio site for Nallagorla Siva Ganesh · Software & Mobile Developer" />
     <title>Nallagorla Siva Ganesh · Portfolio</title>
     <meta name="theme-color" content="#04030a" />
     <link rel="canonical" href="https://nsg-lab.github.io/portfolio" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Nallagorla Siva Ganesh · Portfolio" />
-    <meta
-      property="og:description"
-      content="Software & Mobile Developer crafting reliable web & mobile applications."
-    />
+    <meta property="og:description" content="Software & Mobile Developer crafting reliable web & mobile applications." />
     <meta property="og:url" content="https://nsg-lab.github.io/portfolio" />
     <meta property="og:image" content="assets/social-card.svg" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Nallagorla Siva Ganesh · Portfolio" />
-    <meta
-      name="twitter:description"
-      content="Software & Mobile Developer crafting reliable web & mobile applications."
-    />
+    <meta name="twitter:description" content="Software & Mobile Developer crafting reliable web & mobile applications." />
     <meta name="twitter:image" content="assets/social-card.svg" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Nallagorla Siva Ganesh" />
     <link rel="manifest" href="site.webmanifest" />
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
     <link rel="mask-icon" href="assets/favicon.svg" color="#050009" />
+    <!-- Optimized Google Fonts loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:ital,wght@0,500;0,600;1,500&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:ital,wght@0,500;0,600;1,500&display=swap" as="style" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:ital,wght@0,500;0,600;1,500&display=swap" media="print" onload="this.media='all'" />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:ital,wght@0,500;0,600;1,500&display=swap" />
+    </noscript>
     <link rel="stylesheet" href="styles.css" />
     <script src="app.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#about">Skip to content</a>
-    <nav class="hero__nav">
+    <nav class="hero__nav" role="navigation" aria-label="Main Navigation">
       <a class="hero__logo" href="#top" aria-label="Nallagorla Siva Ganesh home">
         <img src="assets/high-resolution-color-logo.png" alt="Nallagorla Siva Ganesh personal logo" />
       </a>
       <button
         class="hero__menu"
-        aria-label="Toggle navigation"
+        aria-label="Toggle navigation menu"
         aria-controls="primary-navigation"
         aria-expanded="false"
+        tabindex="0"
       >
         <span></span>
         <span></span>
       </button>
-      <div class="hero__links" id="primary-navigation" aria-hidden="true">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Education</a>
-        <a href="#highlights">Highlights</a>
-        <a href="#contact">Contact</a>
+      <div class="hero__links" id="primary-navigation" aria-hidden="true" role="menu">
+        <a href="#about" role="menuitem" tabindex="0">About</a>
+        <a href="#projects" role="menuitem" tabindex="0">Projects</a>
+        <a href="#experience" role="menuitem" tabindex="0">Education</a>
+        <a href="#highlights" role="menuitem" tabindex="0">Highlights</a>
+        <a href="#contact" role="menuitem" tabindex="0">Contact</a>
       </div>
-      <button class="theme-toggle" aria-label="Toggle theme">
+      <button class="theme-toggle" aria-label="Toggle theme" tabindex="0">
         <span class="theme-toggle__icon">☀</span>
       </button>
     </nav>
 
-    <header class="hero" id="top">
+    <header class="hero" id="top" role="banner">
       <div class="hero__shell">
         <div class="hero__intro reveal">
           <p class="hero__eyebrow">Nallagorla Siva Ganesh · Tenali</p>
@@ -105,7 +118,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="main-content" tabindex="-1" role="main">
       <section id="about" class="section section--about">
         <div class="section__intro">
           <p>Professional Summary</p>
@@ -248,7 +261,7 @@
             <button class="filter-btn" data-filter="mobile">Mobile</button>
           </div>
         </div>
-        <div class="projects__grid" id="projectsGrid">
+        <div class="projects__grid" id="projectsGrid" aria-live="polite" aria-atomic="true">
           <!-- Static fallback cards ensure content is present without JavaScript -->
           <article class="project-card reveal" data-type="platform">
             <span class="project-card__tag">2025 · Platform</span>
