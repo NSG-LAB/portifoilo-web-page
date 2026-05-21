@@ -1,3 +1,19 @@
+// ...existing code...
+
+(function checkResume() {
+  const btn = document.getElementById('resumeBtn');
+  if (!btn) return;
+  fetch(btn.href, { method: 'HEAD' })
+    .then(res => {
+      if (!res.ok) {
+        btn.setAttribute('aria-disabled', 'true');
+        btn.title = 'Resume not yet uploaded — check back soon';
+        btn.style.opacity = '0.45';
+        btn.style.pointerEvents = 'none';
+      }
+    })
+    .catch(() => {});
+})();
 const projects = [
   {
     title: 'Rural Entrepreneurship Platform',

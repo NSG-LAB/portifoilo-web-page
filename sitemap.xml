@@ -5,23 +5,8 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://nsg-lab.github.io/portfolio/#about</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nsg-lab.github.io/portfolio/#projects</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://nsg-lab.github.io/portfolio/#experience</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nsg-lab.github.io/portfolio/#highlights</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://nsg-lab.github.io/portfolio/#contact</loc>
-    <priority>0.7</priority>
+    <loc>https://nsg-lab.github.io/portfolio/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <priority>1.0</priority>
   </url>
 </urlset>
