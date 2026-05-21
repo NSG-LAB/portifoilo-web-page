@@ -48,14 +48,20 @@
     <noscript>
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Fraunces:ital,wght@0,500;0,600;1,500&display=swap" />
     </noscript>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="styles.min.css" />
+    <script src="app.min.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#about">Skip to content</a>
     <nav class="hero__nav" role="navigation" aria-label="Main Navigation">
       <a class="hero__logo" href="#top" aria-label="Nallagorla Siva Ganesh home">
         <img src="assets/high-resolution-color-logo.png" alt="Nallagorla Siva Ganesh personal logo" onerror="this.onerror=null;this.src='assets/favicon.svg'" />
+          <img
+            src="assets/high-resolution-color-logo.png"
+            alt="Nallagorla Siva Ganesh personal logo"
+            loading="lazy"
+            onerror="this.onerror=null;this.src='assets/favicon.svg'"
+          />
       </a>
       <button
         class="hero__menu"
@@ -104,6 +110,14 @@
             <a href="https://github.com/NSG-LAB" target="_blank" rel="noreferrer">GitHub</a>
           </div>
         </div>
+      <button id="backToTop" title="Back to top" style="display:none;position:fixed;bottom:32px;right:32px;z-index:1000;padding:12px 18px;font-size:1.2rem;border-radius:50%;background:#0074d9;color:#fff;border:none;box-shadow:0 2px 8px rgba(0,0,0,0.15);cursor:pointer;">↑</button>
+      <footer class="footer">
+        <p>© <span id="year"></span> Nallagorla Siva Ganesh · Crafted with curiosity.</p>
+        <div class="footer__links">
+          <a href="https://www.linkedin.com/in/nallagorla-siva-ganesh" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/NSG-LAB" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </footer>
       </div>
       <div class="hero__stats" aria-label="Key impact metrics">
         <article class="stat-card">
@@ -132,6 +146,19 @@
           </p>
         </div>
         <div class="about-grid">
+      // Back to Top button logic
+      const backToTopBtn = document.getElementById('backToTop');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+          backToTopBtn.style.display = 'block';
+        } else {
+          backToTopBtn.style.display = 'none';
+        }
+      });
+      backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
           <article class="about-grid__story reveal">
             <p class="eyebrow">Field notes from Tenali</p>
             <h3>Hands-on builder who documents every move.</h3>
