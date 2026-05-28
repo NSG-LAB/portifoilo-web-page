@@ -3,16 +3,37 @@
 (function checkResume() {
   const btn = document.getElementById('resumeBtn');
   if (!btn) return;
-  fetch(btn.href, { method: 'HEAD' })
-    .then(res => {
-      if (!res.ok) {
-        btn.setAttribute('aria-disabled', 'true');
-        btn.title = 'Resume not yet uploaded — check back soon';
-        btn.style.opacity = '0.45';
-        btn.style.pointerEvents = 'none';
+
+  const tryHead = (url) => fetch(url, { method: 'HEAD' });
+
+  tryHead(btn.href)
+    .then((res) => {
+      if (res.ok) return;
+      // Try a common fallback filename on the same path before giving up
+      const fallback = btn.href.includes('Siva_Ganesh_Resume.pdf')
+        ? btn.href.replace('Siva_Ganesh_Resume.pdf', 'Nallagorla_Siva_Ganesh_Resume.pdf')
+        : btn.href.replace('Nallagorla_Siva_Ganesh_Resume.pdf', 'Siva_Ganesh_Resume.pdf');
+
+      if (fallback && fallback !== btn.href) {
+        return tryHead(fallback).then((r2) => {
+          if (r2.ok) {
+            btn.href = fallback;
+            btn.setAttribute('download', fallback.split('/').pop());
+            btn.title = 'Download my resume';
+          } else {
+            // Don't disable the link — allow browser to handle the request.
+            btn.title = 'Resume may be unavailable — try downloading manually';
+            console.warn('Resume HEAD check failed for', btn.href, 'and', fallback);
+          }
+        });
       }
+      btn.title = 'Resume may be unavailable — try downloading manually';
     })
-    .catch(() => {});
+    .catch((err) => {
+      // Network or CORS errors can cause HEAD to fail; keep the link enabled.
+      console.warn('Resume check failed:', err);
+      btn.title = 'Resume check failed — try downloading manually';
+    });
 })();
 const projects = [
   {
