@@ -13,7 +13,7 @@ export const DroneSection: React.FC = () => {
   const selectedComponentDetail = activeDrone.components.find((c) => c.id === selectedComponentId);
 
   return (
-    <section id="drone" className="py-24 relative overflow-hidden" aria-label="Garuda Club Drone Engineering">
+    <section id="drone" className="py-24 relative overflow-hidden" aria-label="Drone Engineering">
       {/* Background ambient aerospace glows */}
       <div className="absolute top-1/3 left-1/4 w-[500px] h-[500px] bg-cyan-500/10 rounded-full blur-[140px] pointer-events-none -z-10" />
       <div className="absolute bottom-10 right-10 w-[400px] h-[400px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none -z-10" />
@@ -24,7 +24,7 @@ export const DroneSection: React.FC = () => {
           <div>
             <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/30 text-cyan-300 text-xs font-mono mb-3 w-fit">
               <Plane className="w-3.5 h-3.5" />
-              <span>Garuda UAV Club · Avionics & Systems Engineering</span>
+              <span>Autonomous UAV & Systems Engineering</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-display font-bold text-white tracking-tight">
               Hardware & Avionics: Autonomous Multi-Rotors.

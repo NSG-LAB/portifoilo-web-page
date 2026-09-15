@@ -9,7 +9,7 @@ const NAV_ITEMS = [
   { label: 'About', href: '#about' },
   { label: 'Skills', href: '#skills' },
   { label: 'Projects', href: '#projects' },
-  { label: 'Garuda Drones', href: '#drone' },
+  { label: 'Drone Engineering', href: '#drone' },
   { label: 'Achievements', href: '#achievements' },
   { label: 'Certifications', href: '#certifications' },
   { label: 'GitHub', href: '#github' },
