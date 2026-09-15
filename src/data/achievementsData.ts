@@ -2,8 +2,56 @@ import { Achievement } from '../types';
 
 export const achievementsData: Achievement[] = [
   {
+    id: 'ai-innovation-hackathon-2026',
+    year: '2026',
+    title: 'AI Innovation Hackathon 2026 – Build Real-World AI Solutions',
+    role: 'Team Lead · Team GARUDA HACK',
+    organization: 'Bharat Academix · KL University',
+    description:
+      'Participated in the Technical Assessment of AI Innovation Hackathon 2026 as Team GARUDA HACK, engineering practical real-world AI and agentic solutions under strict technical guidelines.',
+    category: 'hackathon',
+    skillsGained: ['Real-World AI Solutions', 'FastAPI & LLM Orchestration', 'Technical Assessment', 'Team Leadership'],
+    link: 'assets/AI Innovation Hackathon 2026 – Build Real-World AI Solutions.pdf'
+  },
+  {
+    id: 'omnikon-national-hackathon-2026',
+    year: '2026',
+    title: 'Omnikon National Hackathon 2026',
+    role: 'Full-Stack Developer & Participant',
+    organization: 'Omnikon · KL University Vijayawada',
+    description:
+      'Competed in the Omnikon National Hackathon 2026, building responsive full-stack prototypes and tackling real-world problem statements under intense hackathon sprints.',
+    category: 'hackathon',
+    skillsGained: ['Rapid Web Prototyping', 'System Architecture', 'React & APIs', 'Sprint Delivery'],
+    link: 'assets/Omnikon National Hackathon 2026.pdf'
+  },
+  {
+    id: 'ai-ml-competition-2026',
+    year: '2026',
+    title: 'AI & Machine Learning Competition (Round 2 Technical Assessment)',
+    role: 'Participant & AI Specialist',
+    organization: 'Bharat Academix · KL University',
+    description:
+      'Qualified for and participated in Round 2 – Technical Assessment of the prestigious AI & Machine Learning Competition, demonstrating core machine learning modeling and algorithmic efficiency.',
+    category: 'hackathon',
+    skillsGained: ['Machine Learning', 'Data Modeling', 'Technical Assessment', 'Python'],
+    link: 'assets/AI & Machine Learning Competition.pdf'
+  },
+  {
+    id: 'hackdevengers-1-2026',
+    year: '2026',
+    title: 'HackDevengers 1.0 Hackathon',
+    role: 'Frontend & Cross-Platform Developer',
+    organization: 'Devengers · KL University Vijayawada',
+    description:
+      'Participated in HackDevengers 1.0, architecting high-responsiveness web and mobile workflows with team collaborators.',
+    category: 'hackathon',
+    skillsGained: ['Web Engineering', 'Rapid Prototyping', 'JavaScript', 'Cross-Platform Workflows'],
+    link: 'assets/HackDevengers1.0.pdf'
+  },
+  {
     id: 'garuda-delivery-drone',
-    year: '2025',
+    year: '2025 - 2026',
     title: 'Garuda Club Avionics Lead · Heavy Delivery UAV Mission',
     role: 'Lead Avionics & Systems Integrator',
     organization: 'Garuda UAV Club, KL University',
@@ -14,19 +62,8 @@ export const achievementsData: Achievement[] = [
     link: '#drone'
   },
   {
-    id: 'national-hackathon-finalist',
-    year: '2025',
-    title: 'National AI & Smart City Hackathon Finalist',
-    role: 'Full-Stack & Systems Lead',
-    organization: 'National Innovation Challenge',
-    description:
-      'Architected an automated multi-modal grievance and review intelligence prototype (precursor to ReviewMind AI) within a 36-hour continuous hackathon, placing among top finalist teams.',
-    category: 'hackathon',
-    skillsGained: ['Rapid Prototyping', 'FastAPI', 'React', 'Team Leadership'],
-  },
-  {
     id: 'garuda-scout-quad',
-    year: '2024',
+    year: '2024 - 2025',
     title: 'Agile Scout UAV Rapid Deployment Project',
     role: 'Hardware & Calibration Engineer',
     organization: 'Garuda Club Robotics Wing',
@@ -45,18 +82,6 @@ export const achievementsData: Achievement[] = [
     description:
       'Consistent top-percentile academic standing in Computer Science & Information Technology, mentoring peers in Java, data structures, and web development fundamentals.',
     category: 'award',
-    skillsGained: ['Computer Science Foundations', 'Algorithms', 'Peer Mentoring'],
-  },
-  {
-    id: 'open-source-milestone',
-    year: '2024',
-    title: 'Open Source Community Stewardship Milestone',
-    role: 'Repository Maintainer',
-    organization: 'NSG-LAB GitHub',
-    description:
-      'Surpassed 12+ public repositories stewarded with rigorous commit hygiene, documentation standards, and continuous integration workflows.',
-    category: 'milestone',
-    skillsGained: ['Git Workflows', 'CI/CD Pipelines', 'Open Source DX'],
-    link: 'https://github.com/NSG-LAB'
+    skillsGained: ['Computer Science Foundations', 'Algorithms', 'Peer Mentoring']
   }
 ];

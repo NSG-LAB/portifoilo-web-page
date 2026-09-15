@@ -89,6 +89,8 @@ export interface Certification {
   issueDate: string;
   credentialId?: string;
   credentialUrl: string;
+  pdfUrl?: string;
+  type?: 'participation' | 'certification';
   skills: string[];
   badgeColor: string;
 }
