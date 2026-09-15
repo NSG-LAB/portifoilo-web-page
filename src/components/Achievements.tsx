@@ -3,7 +3,7 @@ import { achievementsData } from '../data/achievementsData';
 import { Trophy, Award, Flag, Sparkles, ExternalLink, ArrowRight } from 'lucide-react';
 
 export const Achievements: React.FC = () => {
-  const [filter, setFilter] = useState<'all' | 'hackathon' | 'garuda' | 'milestone' | 'award'>('all');
+  const [filter, setFilter] = useState<'all' | 'hackathon' | 'award'>('all');
 
   const filtered = filter === 'all'
     ? achievementsData
@@ -11,14 +11,10 @@ export const Achievements: React.FC = () => {
 
   const getCategoryBadge = (cat: string) => {
     switch (cat) {
-      case 'garuda':
-        return { label: 'Garuda Club UAV', color: '#06b6d4' };
       case 'hackathon':
         return { label: 'Hackathon & Competitions', color: '#8b5cf6' };
-      case 'milestone':
-        return { label: 'Open Source Milestone', color: '#10b981' };
       default:
-        return { label: 'Academic Award', color: '#f59e0b' };
+        return { label: 'Verified Certification', color: '#10b981' };
     }
   };
 
@@ -36,7 +32,7 @@ export const Achievements: React.FC = () => {
               Milestones, competitions & leadership.
             </h2>
             <p className="mt-2 text-slate-400 text-sm sm:text-base max-w-xl">
-              Chronicle of competitive hackathons, UAV avionics validation, peer mentorship, and open source achievements.
+              Chronicle of competitive hackathons, national technical assessments, and verified industry credentials.
             </p>
           </div>
 
@@ -44,9 +40,8 @@ export const Achievements: React.FC = () => {
           <div className="mt-6 md:mt-0 flex flex-wrap gap-2 p-1.5 rounded-2xl bg-slate-900/80 border border-slate-800 backdrop-blur-md">
             {[
               { id: 'all', label: 'All Milestones' },
-              { id: 'garuda', label: 'Garuda UAV' },
-              { id: 'hackathon', label: 'Hackathons' },
-              { id: 'milestone', label: 'Open Source' },
+              { id: 'hackathon', label: 'Hackathons & Competitions' },
+              { id: 'award', label: 'Certifications' },
             ].map((tab) => (
               <button
                 key={tab.id}
@@ -65,7 +60,7 @@ export const Achievements: React.FC = () => {
 
         {/* Timeline Layout */}
         <div className="relative pl-6 sm:pl-10 border-l border-slate-800 space-y-10">
-          {filtered.map((item, idx) => {
+          {filtered.map((item) => {
             const badge = getCategoryBadge(item.category);
             return (
               <div key={item.id} className="relative group">
@@ -126,7 +121,7 @@ export const Achievements: React.FC = () => {
                         rel="noreferrer"
                         className="text-xs font-mono text-cyan-400 hover:text-cyan-300 hover:underline flex items-center gap-1"
                       >
-                        <span>Inspect verification</span>
+                        <span>{item.link.endsWith('.pdf') ? 'View Certificate PDF' : 'Inspect verification'}</span>
                         <ArrowRight className="w-3 h-3" />
                       </a>
                     )}

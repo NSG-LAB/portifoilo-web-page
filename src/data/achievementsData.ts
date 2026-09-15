@@ -60,40 +60,5 @@ export const achievementsData: Achievement[] = [
     category: 'hackathon',
     skillsGained: ['Web Engineering', 'Rapid Prototyping', 'JavaScript', 'Cross-Platform Workflows'],
     link: 'assets/HackDevengers1.0.pdf'
-  },
-  {
-    id: 'garuda-delivery-drone',
-    year: '2025 - 2026',
-    title: 'Garuda Club Avionics Lead · Heavy Delivery UAV Mission',
-    role: 'Lead Avionics & Systems Integrator',
-    organization: 'Garuda UAV Club, KL University',
-    description:
-      'Spearheaded the design, flight-controller tuning, and field deployment of the heavy-lift autonomous delivery drone with Tarot 320KV motors and Pixhawk Orange Cube Plus. Successfully validated waypoint navigation and autonomous cargo release.',
-    category: 'garuda',
-    skillsGained: ['Avionics Engineering', 'ArduPilot/PX4', 'Telemetry Systems', 'Failsafe Design'],
-    link: '#drone'
-  },
-  {
-    id: 'garuda-scout-quad',
-    year: '2024 - 2025',
-    title: 'Agile Scout UAV Rapid Deployment Project',
-    role: 'Hardware & Calibration Engineer',
-    organization: 'Garuda Club Robotics Wing',
-    description:
-      'Engineered and bench-tested the high-speed F450 Scout quadcopter with CUAV Neo 3 GPS and Skydroid T12 data link, establishing a reusable baseline for rapid campus aerial mapping.',
-    category: 'garuda',
-    skillsGained: ['PID Calibration', 'GPS RTK Integration', 'Power Distribution', 'Field Operations'],
-    link: '#drone'
-  },
-  {
-    id: 'academic-merit-kl',
-    year: '2023 - 2026',
-    title: 'B.Tech CS&IT Academic Excellence & Lab Steward',
-    role: 'Undergraduate Scholar',
-    organization: 'KL University',
-    description:
-      'Consistent top-percentile academic standing in Computer Science & Information Technology, mentoring peers in Java, data structures, and web development fundamentals.',
-    category: 'award',
-    skillsGained: ['Computer Science Foundations', 'Algorithms', 'Peer Mentoring']
   }
 ];
