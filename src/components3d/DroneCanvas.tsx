@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls, Float, Html } from '@react-three/drei';
+import { OrbitControls, Float } from '@react-three/drei';
 import * as THREE from 'three';
 import { DroneSpec } from '../types';
 
@@ -33,6 +33,15 @@ function Drone3DModel({ drone, exploded, selectedComponent, onSelectComponent }:
   });
 
   const isSelected = (id: string) => selectedComponent === id;
+
+  const handlePointerOver = (e: any) => {
+    e.stopPropagation();
+    document.body.style.cursor = 'pointer';
+  };
+
+  const handlePointerOut = () => {
+    document.body.style.cursor = 'auto';
+  };
 
   return (
     <group ref={groupRef} position={[0, 0, 0]}>
@@ -73,7 +82,8 @@ function Drone3DModel({ drone, exploded, selectedComponent, onSelectComponent }:
           e.stopPropagation();
           onSelectComponent('fc');
         }}
-        className="cursor-pointer"
+        onPointerOver={handlePointerOver}
+        onPointerOut={handlePointerOut}
       >
         <mesh>
           <boxGeometry args={[0.3, 0.14, 0.3]} />
@@ -100,7 +110,8 @@ function Drone3DModel({ drone, exploded, selectedComponent, onSelectComponent }:
           e.stopPropagation();
           onSelectComponent('gps');
         }}
-        className="cursor-pointer"
+        onPointerOver={handlePointerOver}
+        onPointerOut={handlePointerOut}
       >
         {/* GPS Aluminum Mast */}
         <mesh position={[0, 0.3, 0]}>
@@ -157,7 +168,8 @@ function Drone3DModel({ drone, exploded, selectedComponent, onSelectComponent }:
                 e.stopPropagation();
                 onSelectComponent('motors');
               }}
-              className="cursor-pointer"
+              onPointerOver={handlePointerOver}
+              onPointerOut={handlePointerOut}
             >
               {/* Motor Stator Bell */}
               <mesh position={[0, 0.06, 0]}>
@@ -214,7 +226,8 @@ function Drone3DModel({ drone, exploded, selectedComponent, onSelectComponent }:
                 e.stopPropagation();
                 onSelectComponent('esc');
               }}
-              className="cursor-pointer"
+              onPointerOver={handlePointerOver}
+              onPointerOut={handlePointerOut}
             >
               <mesh>
                 <boxGeometry args={[0.16, 0.03, 0.08]} />
@@ -238,7 +251,8 @@ function Drone3DModel({ drone, exploded, selectedComponent, onSelectComponent }:
           e.stopPropagation();
           onSelectComponent('battery');
         }}
-        className="cursor-pointer"
+        onPointerOver={handlePointerOver}
+        onPointerOut={handlePointerOut}
       >
         <mesh>
           <boxGeometry args={[isDelivery ? 0.75 : 0.45, 0.22, 0.42]} />
@@ -264,7 +278,8 @@ function Drone3DModel({ drone, exploded, selectedComponent, onSelectComponent }:
           e.stopPropagation();
           onSelectComponent('camera');
         }}
-        className="cursor-pointer"
+        onPointerOver={handlePointerOver}
+        onPointerOut={handlePointerOut}
       >
         {/* Gimbal Arm */}
         <mesh position={[0, 0.05, 0]}>

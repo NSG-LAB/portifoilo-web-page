@@ -64,6 +64,15 @@ function ConstellationField({ onSelectSkill }: { onSelectSkill?: (name: string) 
     return geom;
   }, []);
 
+  const handlePointerOver = (e: any) => {
+    e.stopPropagation();
+    document.body.style.cursor = 'pointer';
+  };
+
+  const handlePointerOut = () => {
+    document.body.style.cursor = 'auto';
+  };
+
   return (
     <group ref={groupRef}>
       {/* Central Core Node */}
@@ -98,7 +107,8 @@ function ConstellationField({ onSelectSkill }: { onSelectSkill?: (name: string) 
                 e.stopPropagation();
                 if (onSelectSkill) onSelectSkill(node.name);
               }}
-              className="cursor-pointer"
+              onPointerOver={handlePointerOver}
+              onPointerOut={handlePointerOut}
             >
               <sphereGeometry args={[node.size, 16, 16]} />
               <meshStandardMaterial
