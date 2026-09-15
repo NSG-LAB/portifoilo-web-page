@@ -2,6 +2,18 @@ import { Achievement } from '../types';
 
 export const achievementsData: Achievement[] = [
   {
+    id: 'coursera-spring-boot-cert',
+    year: 'Sep 2026',
+    title: 'Java Microservices with Spring Boot Certification',
+    role: 'Certified Developer · Edureka & Coursera',
+    organization: 'Coursera & Edureka (ID: O6HTIQZGSAEG)',
+    description:
+      'Completed rigorous training and assessments in Spring Boot, distributed microservices patterns, Eureka service discovery, API Gateways, and fault-tolerant architecture.',
+    category: 'award',
+    skillsGained: ['Java Microservices', 'Spring Boot', 'Eureka & OpenFeign', 'RESTful Systems'],
+    link: 'https://coursera.org/verify/O6HTIQZGSAEG'
+  },
+  {
     id: 'ai-innovation-hackathon-2026',
     year: '2026',
     title: 'AI Innovation Hackathon 2026 – Build Real-World AI Solutions',
